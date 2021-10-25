@@ -47,15 +47,15 @@ class _HomeState extends State<Home> {
         child: Column(
           children: [
             Container(
-              child: new Padding(
+              child: Padding(
                 padding: const EdgeInsets.all(3.0),
-                child: new Card(
-                  child: new ListTile(
-                    title: new TextField(
+                child: Card(
+                  child: ListTile(
+                    title: TextField(
                       autofocus: false,
                       autocorrect: false,
                       controller: _searchController,
-                      decoration: new InputDecoration(
+                      decoration: InputDecoration(
                           hintText: 'Cari', border: InputBorder.none),
                       onChanged: (value) {
                         setState(() {
